@@ -11,7 +11,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         
         scnView = self.view as? SCNView
-        scnView.showsStatistics = true
+        scnView.showsStatistics = false
         scnView.allowsCameraControl = true
         scnView.autoenablesDefaultLighting = false
         
@@ -24,7 +24,7 @@ class ViewController: NSViewController {
         cameraNode.position = SCNVector3(x:0, y:0, z:12)
         scnScene.rootNode.addChildNode(cameraNode)
         
-        let plane = SCNPlane(width: 10, height: 10)
+        let plane = SCNPlane(width: 20, height: 10)
         
         guard let shaderURL = Bundle.main.url(forResource: "frag", withExtension: "shader"),
             let modifier = try? String(contentsOf: shaderURL)
