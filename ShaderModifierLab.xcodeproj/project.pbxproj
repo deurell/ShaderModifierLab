@@ -11,6 +11,7 @@
 		739EA6F52260AD5800C3590D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739EA6F42260AD5800C3590D /* ViewController.swift */; };
 		739EA6F72260AD5800C3590D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739EA6F62260AD5800C3590D /* Assets.xcassets */; };
 		739EA6FA2260AD5800C3590D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739EA6F82260AD5800C3590D /* Main.storyboard */; };
+		739EA7082260B9DD00C3590D /* frag.shader in Resources */ = {isa = PBXBuildFile; fileRef = 739EA7072260B9DD00C3590D /* frag.shader */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		739EA6F92260AD5800C3590D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		739EA6FB2260AD5800C3590D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		739EA6FC2260AD5800C3590D /* ShaderModifierLab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShaderModifierLab.entitlements; sourceTree = "<group>"; };
+		739EA7072260B9DD00C3590D /* frag.shader */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frag.shader; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		739EA6F12260AD5800C3590D /* ShaderModifierLab */ = {
 			isa = PBXGroup;
 			children = (
+				739EA7072260B9DD00C3590D /* frag.shader */,
 				739EA6F22260AD5800C3590D /* AppDelegate.swift */,
 				739EA6F42260AD5800C3590D /* ViewController.swift */,
 				739EA6F62260AD5800C3590D /* Assets.xcassets */,
@@ -121,6 +124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739EA7082260B9DD00C3590D /* frag.shader in Resources */,
 				739EA6F72260AD5800C3590D /* Assets.xcassets in Resources */,
 				739EA6FA2260AD5800C3590D /* Main.storyboard in Resources */,
 			);
