@@ -24,18 +24,18 @@ class ViewController: NSViewController {
         cameraNode.position = SCNVector3(x:0, y:0, z:12)
         scnScene.rootNode.addChildNode(cameraNode)
         
-        let plane = SCNPlane(width: 20, height: 10)
+        let geo = SCNBox(width: 6, height: 6, length: 6, chamferRadius: 1.0)
         
         guard let shaderURL = Bundle.main.url(forResource: "frag", withExtension: "shader"),
             let modifier = try? String(contentsOf: shaderURL)
             else { fatalError("Can't load shader from bundle.") }
         
-        plane.shaderModifiers = [.fragment: modifier]
+        geo.shaderModifiers = [.fragment: modifier]
         
-        let node = SCNNode(geometry: plane)
-        plane.firstMaterial?.diffuse.contents = NSImage(named: "skull")
-        plane.firstMaterial?.diffuse.wrapS = SCNWrapMode.repeat;
-        plane.firstMaterial?.diffuse.wrapT = SCNWrapMode.repeat;
+        let node = SCNNode(geometry: geo)
+        geo.firstMaterial?.diffuse.contents = NSImage(named: "skull")
+        geo.firstMaterial?.diffuse.wrapS = SCNWrapMode.repeat;
+        geo.firstMaterial?.diffuse.wrapT = SCNWrapMode.repeat;
         scnScene.rootNode.addChildNode(node)
         scnView.isPlaying = true
     }
